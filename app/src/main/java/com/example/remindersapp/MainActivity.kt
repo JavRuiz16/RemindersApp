@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.semantics.Role.Companion.Image
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.remindersapp.data.DataSource
 import com.example.remindersapp.model.remindersapp
@@ -25,13 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             RemindersAppTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    RemindersApp()
-
-                }
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background, content = ::RemindersApp)
             }
         }
     }
