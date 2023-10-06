@@ -9,6 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.remindersapp.model.remindersapp
 import com.example.remindersapp.ui.theme.RemindersAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,6 +34,11 @@ class MainActivity : ComponentActivity() {
 fun RemindersApp () {
 
 }
+
+@Composable
+fun RemindersAppCard(remindersapp: remindersapp, modifier: Modifier = Modifier) {
+}
+
 
 @Preview(showBackground = true)
 @Composable
