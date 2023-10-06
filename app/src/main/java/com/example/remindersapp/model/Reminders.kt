@@ -8,3 +8,4 @@ data class remindersapp(
     @StringRes val stringResourceId: Int,
     @DrawableRes val imageResourceId: Int,
 )
+
